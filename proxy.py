@@ -78,10 +78,7 @@ class Proxy(Thread):
 
 
 SERVER_HOST = "ec2-15-222-169-12.ca-central-1.compute.amazonaws.com"
-FROM_HOST = '0.0.0.0'
-FROM_HOST = socket.gethostname()
 MASTER_PORT = 3333
-print(FROM_HOST)
 FROM_HOST = '0.0.0.0'
 master_server = Proxy(FROM_HOST, SERVER_HOST, MASTER_PORT)
 master_server.start()
